@@ -1,0 +1,10 @@
+[Unit]
+Description=Exam LCD display
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/root/exam-ometer/exam-ometer.py
+ 
+[Install]
+WantedBy=multi-user.target
