@@ -28,6 +28,7 @@
 
 import pylcd
 import datetime
+import time
 
 PINMAP = {
         'RS': 7,
