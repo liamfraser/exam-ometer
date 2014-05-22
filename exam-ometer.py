@@ -90,6 +90,8 @@ class ExamLCD:
 
                 if dt == 0:
                     self.display.write("{0}: today".format(e.name, dt))
+                elif dt == 1:
+                    self.display.write("{0}: tomorrow".format(e.name, dt))
                 else:
                     self.display.write("{0}: {1} days".format(e.name, dt))
 
@@ -104,7 +106,7 @@ class ExamLCD:
 if __name__ == "__main__":
     el = ExamLCD()
     # Dates are Y, M, D tuples
-    el.exams.append(Exam((2014, 05, 20), "TPOP Prac"))
+    #el.exams.append(Exam((2014, 05, 20), "TPOP Prac"))
     el.exams.append(Exam((2014, 05, 23), "TPOP Theory"))
     el.exams.append(Exam((2014, 05, 27), "NUMA"))
     el.exams.append(Exam((2014, 05, 30), "MFCS"))
